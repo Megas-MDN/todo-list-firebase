@@ -7,9 +7,9 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: 'MyApiKey',
-  authDomain: 'todo-app-react-megas.firebaseapp.com',
-  projectId: 'todo-app-react-megas',
-  storageBucket: 'todo-app-react-megas.appspot.com',
+  authDomain: 'myDom.firebaseapp.com',
+  projectId: 'myId-react-megas',
+  storageBucket: 'myStorage-megas.appspot.com',
   messagingSenderId: 'MySandId',
   appId: 'X:MyNumber:Zap:HexaDec',
 };

@@ -6,14 +6,14 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'MyApiKey',
-  authDomain: 'myDom.firebaseapp.com',
-  projectId: 'myId-react-megas',
-  storageBucket: 'myStorage-megas.appspot.com',
-  messagingSenderId: 'MySandId',
-  appId: 'X:MyNumber:Zap:HexaDec',
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH,
+  projectId: process.env.REACT_APP_PROJECT,
+  storageBucket: process.env.REACT_APP_STORAGE,
+  messagingSenderId: process.env.REACT_APP_MESSAGE,
+  appId: process.env.REACT_APP_APPID,
 };
 
 // Initialize Firebase
-const appMock = initializeApp(firebaseConfig);
-export const dbMock = getFirestore(appMock);
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
